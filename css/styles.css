@@ -25,7 +25,7 @@
     footer {
       background: #FF4BC2;
       color: #fff;
-      padding: 200px;
+      padding: 100px;
       text-align: center;
     }
 	.container {
@@ -60,7 +60,7 @@
 
 	.logo {
 		max-width: 100%;
-		max-height: 400px;
+		max-height: 340px;
 	}
 
 	/* Responsive */
@@ -139,4 +139,98 @@
 
   a, a:visited {
 	  color: #FF4BC2;
+  }
+
+  .w3-round {
+	  border-radius: 4px
+  }
+  .w3-tag {
+	  background-color: #ff93db;
+	  color: #fff;
+	  display: inline-block;
+	  padding-left: 8px;
+	  padding-right: 8px;
+	  text-align: center;
+	  line-height: 1;
+	  font-size: 0.8rem;
+  }
+  .w3-border-white,.w3-hover-border-white:hover {
+	  border-color: #fff!important
+  }
+  .w3-pink,.w3-hover-pink:hover {
+	  color: #fff!important;
+	  background-color: #ff93db!important
+  }
+  .w3-border {
+	  border: 1px solid #ff93db!important
+  }
+
+  .content-box {
+	  justify-content: center;
+	  background-color: #222;
+	  color: #fff;
+	  padding: 40px;
+	  text-align: center;
+	  max-width: 650px;
+	  width: 100%;
+	  margin: 0 auto;
+  }
+
+  .content-box .icon {
+	  margin-bottom: 25px;
+  }
+
+  .content-box .icon svg {
+	  width: 60px;
+	  height: 60px;
+	  fill: #fff;
+  }
+
+  .content-box h2 {
+	  font-size: 1.4em;
+	  margin-bottom: 30px;
+	  line-height: 1.5;
+  }
+
+  .content-box .separator {
+	  height: 1px;
+	  background-color: #444;
+	  margin: 30px auto;
+	  width: 80%;
+  }
+
+  .content-box .price-label {
+	  font-size: 1.1em;
+	  color: #ccc;
+	  margin-bottom: 10px;
+  }
+
+  .content-box .price {
+	  font-size: 3.5em;
+	  font-weight: bold;
+	  margin-bottom: 30px;
+  }
+
+  .content-box .buy-button {
+	  display: inline-block;
+	  background-color: #00e676; /* Green button color */
+	  color: #fff;
+	  padding: 15px 30px;
+	  border-radius: 50px;
+	  text-decoration: none;
+	  font-weight: bold;
+	  font-size: 1.1em;
+	  transition: background-color 0.3s ease;
+	  border: none;
+	  cursor: pointer;
+  }
+
+  .content-box .buy-button:hover {
+	  background-color: #00c853; /* Darker green on hover */
+  }
+
+  .content-box .footer-text {
+	  font-size: 0.9em;
+	  color: #aaa;
+	  margin-top: 30px;
   }
