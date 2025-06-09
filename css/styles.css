@@ -1,236 +1,213 @@
-  body {
-      font-family: Montserrat, sans-serif;
-      margin: 0;
-      background-color: #fff;
-      color: rgb(60, 60, 60);
-      line-height: 1.6;
-    }
+html, body {
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: #fff;
+	color: rgb(60, 60, 60);
+	line-height: 1.6;
+}
 
-    .section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .section p {
-      margin-bottom: 20px;
-    }
-    .image-full {
-      width: 100%;
-      height: auto;
-    }
-    footer {
-      background: #FF4BC2;
-      color: #fff;
-      padding: 100px;
-      text-align: center;
-    }
-	.container {
-	  max-width: 1200px;
-	  margin: 0 auto;
-	  padding: 0 20px;
-	}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
-	.product-section {
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-	  justify-content: space-between;
-	  gap: 30px;
-	  flex-wrap: wrap;
-	  margin: 40px 0;
-	}
+.section {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: auto;
+}
+.section h2 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
 
-	.product-text,
-	.product-image-wrapper {
-	  flex: 1 1 45%;
-	}
+.image-full {
+	width: 100%;
+	height: auto;
+}
+footer {
+	background: #FF4BC2;
+	color: #fff;
+	padding: 100px;
+	text-align: center;
+}
 
-	.product-image-wrapper{
-		text-align: center;
-	}
+.product-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
 
-	.product-image {
-		max-width: 100%;
-		max-height: 670px;
-	}
+.product-text,
+.product-image-wrapper {
+	flex: 1 1 45%;
+}
 
-	.logo {
-		max-width: 100%;
-		max-height: 340px;
-	}
+.product-image-wrapper{
+	text-align: center;
+}
 
-	/* Responsive */
-	@media (max-width: 768px) {
-	  .product-section {
-		flex-direction: column;
-		text-align: center;
-	  }
-	  .product-text,
-	  .product-image-wrapper {
-		flex: 1 1 100%;
-	  }
-	}
-	
-	.payment-button {
-		width: 100%
-	}
-	
-	.hotmart-button {
-		max-width: 200px;
-		flex-direction: row-reverse;
-		background: #00FFBD;
-		color: #FFFFFF !important;
-		font-size: 18px;
-		margin: 20px auto;
-		padding: 16px 32px 16px 32px;
-		border-style: none;
-		border-color: #EF4E23;
-		border-top-width: 2px;
-		border-right-width: 2px;
-		border-bottom-width: 2px;
-		border-left-width: 2px;
-		border-radius: 32px 32px 32px 32px;
-		font-family: Montserrat, sans-serif;
-		font-weight: bold;
-		font-style: normal;
-		text-decoration: none;
-		display: flex;
-		text-align: center;
-		outline: none;
-		cursor: pointer;
-		align-items: center;
-		justify-content: center;
-		line-height: normal;
-		gap: 8px;
-	}
+.product-image {
+	max-width: 100%;
+	max-height: 670px;
+}
 
-  button.accordion-button {
-	  font-family: Montserrat, sans-serif;
-	  color: rgb(60, 60, 60);
-	  background-color: #f7f7f7;
-	  cursor: pointer;
-	  padding: 15px 20px;
-	  width: 100%;
-	  text-align: left;
-	  border: none;
-	  border-bottom: 1px solid #ddd;
-	  font-size: 1rem;
-	  font-weight: bold;
-	  transition: background-color 0.3s;
-  }
-  .accordion-button:hover {
-	  background-color: #eee;
-  }
-  .accordion-content {
-	  padding: 0 20px;
-	  max-height: 0;
-	  overflow: hidden;
-	  background-color: #fafafa;
-	  transition: max-height 0.3s ease;
-  }
-  .accordion-item.active .accordion-content {
-	  padding: 15px 20px;
-	  max-height: 200px; /* puedes ajustar según contenido */
-  }
+.logo {
+	max-width: 100%;
+	max-height: 340px;
+}
 
-  a, a:visited {
-	  color: #FF4BC2;
-  }
+.custom-line {
+	border: none;
+	height: 2px;
+	background-color: rgb(0, 255, 189);
+	width: 80%;
+	margin: 2rem auto;
+}
 
-  .w3-round {
-	  border-radius: 4px
-  }
-  .w3-tag {
-	  background-color: #ff93db;
-	  color: #fff;
-	  display: inline-block;
-	  padding-left: 8px;
-	  padding-right: 8px;
-	  text-align: center;
-	  line-height: 1;
-	  font-size: 0.8rem;
-  }
-  .w3-border-white,.w3-hover-border-white:hover {
-	  border-color: #fff!important
-  }
-  .w3-pink,.w3-hover-pink:hover {
-	  color: #fff!important;
-	  background-color: #ff93db!important
-  }
-  .w3-border {
-	  border: 1px solid #ff93db!important
-  }
+.hotmart-button {
+	max-width: 200px;
+	flex-direction: row-reverse;
+	background: #00FFBD;
+	color: #FFFFFF !important;
+	font-size: 18px;
+	margin: 20px auto;
+	padding: 16px 32px 16px 32px;
+	border-style: none;
+	border-color: #EF4E23;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-radius: 32px 32px 32px 32px;
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	display: flex;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	line-height: normal;
+	gap: 8px;
+}
 
-  .content-box {
-	  justify-content: center;
-	  background-color: #222;
-	  color: #fff;
-	  padding: 40px;
-	  text-align: center;
-	  max-width: 650px;
-	  width: 100%;
-	  margin: 0 auto;
-  }
+.accordion-button {
+	font-family: Montserrat, sans-serif !important;
+	color: rgb(60, 60, 60) !important;
+	background-color: #f7f7f7 !important;
+	cursor: pointer;
+	padding: 15px 20px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+.accordion-button:hover {
+	background-color: #eee;
+}
+.accordion-content {
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	background-color: #fafafa;
+	transition: max-height 0.3s ease;
+}
+.accordion-item.active .accordion-content {
+	padding: 15px 20px;
+	max-height: 200px; /* puedes ajustar según contenido */
+}
 
-  .content-box .icon {
-	  margin-bottom: 25px;
-  }
+a, a:visited {
+	color: #FF4BC2;
+}
 
-  .content-box .icon svg {
-	  width: 60px;
-	  height: 60px;
-	  fill: #fff;
-  }
+.bg-pink {
+	background-color: #ff93db !important;
+}
 
-  .content-box h2 {
-	  font-size: 1.4em;
-	  margin-bottom: 30px;
-	  line-height: 1.5;
-  }
+.tags{
+	margin: 10px;
+}
 
-  .content-box .separator {
-	  height: 1px;
-	  background-color: #444;
-	  margin: 30px auto;
-	  width: 80%;
-  }
+.content-box {
+	justify-content: center;
+	background-color: #222;
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+	max-width: 650px;
+	width: 100%;
+	margin: 0 auto;
+}
 
-  .content-box .price-label {
-	  font-size: 1.1em;
-	  color: #ccc;
-	  margin-bottom: 10px;
-  }
+.content-box .icon {
+	margin-bottom: 25px;
+}
 
-  .content-box .price {
-	  font-size: 3.5em;
-	  font-weight: bold;
-	  margin-bottom: 30px;
-  }
+.content-box .icon svg {
+	width: 60px;
+	height: 60px;
+	fill: #fff;
+}
 
-  .content-box .buy-button {
-	  display: inline-block;
-	  background-color: #00e676; /* Green button color */
-	  color: #fff;
-	  padding: 15px 30px;
-	  border-radius: 50px;
-	  text-decoration: none;
-	  font-weight: bold;
-	  font-size: 1.1em;
-	  transition: background-color 0.3s ease;
-	  border: none;
-	  cursor: pointer;
-  }
+.content-box h2 {
+	font-size: 1.4em;
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
 
-  .content-box .buy-button:hover {
-	  background-color: #00c853; /* Darker green on hover */
-  }
+.content-box .separator {
+	height: 1px;
+	background-color: #444;
+	margin: 30px auto;
+	width: 80%;
+}
 
-  .content-box .footer-text {
-	  font-size: 0.9em;
-	  color: #aaa;
-	  margin-top: 30px;
-  }
+.content-box .price-label {
+	font-size: 1.1em;
+	color: #ccc;
+	margin-bottom: 10px;
+}
+
+.content-box .price {
+	font-size: 3.5em;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.content-box .buy-button {
+	display: inline-block;
+	background-color: #00e676; /* Green button color */
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1em;
+	transition: background-color 0.3s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.content-box .buy-button:hover {
+	background-color: #00c853; /* Darker green on hover */
+}
+
+.content-box .footer-text {
+	font-size: 0.9em;
+	color: #aaa;
+	margin-top: 30px;
+}

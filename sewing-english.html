@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ErizoArt - Coloring books</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
@@ -12,30 +14,14 @@
 <body>
 
 <div class="container">
-	<div class="product-section">
-	  <div class="product-text">
+	<div class="row align-items-center my-4">
+	  <div class="col-md-6">
 		<h2>COLORING BOOK: SEWING</h2>
-		  <div class="tags">
-			  <div class="w3-tag w3-round w3-pink" style="padding:3px">
-				  <div class="w3-tag w3-round w3-pink w3-border w3-border-white">
-					  English
-				  </div>
-			  </div>
-			  <div class="w3-tag w3-round w3-pink" style="padding:3px">
-				  <div class="w3-tag w3-round w3-pink w3-border w3-border-white">
-					  Coloring book
-				  </div>
-			  </div>
-			  <div class="w3-tag w3-round w3-pink" style="padding:3px">
-				  <div class="w3-tag w3-round w3-pink w3-border w3-border-white">
-					  Children
-				  </div>
-			  </div>
-			  <div class="w3-tag w3-round w3-pink" style="padding:3px">
-				  <div class="w3-tag w3-round w3-pink w3-border w3-border-white">
-					  Adults
-				  </div>
-			  </div>
+		  <div class="d-flex flex-wrap gap-2 tags">
+			  <span class="badge bg-pink text-white me-2">English</span>
+			  <span class="badge bg-pink text-white me-2">Coloring book</span>
+			  <span class="badge bg-pink text-white me-2">Children</span>
+			  <span class="badge bg-pink text-white me-2">Adults</span>
 		  </div>
 
 		  <p>Do you love sewing, sewing machines... and coloring too?</p>
@@ -48,18 +34,18 @@
 		  🌐 Language: English (Spanish version available in the <a href="https://hotmart.com/es/club/erizoart" target="_blank" title="Go to my Hotmart store">shop</a>)<br/>
 		
 		<div class='payment-button'>
-			<a href="https://pay.hotmart.com/E100161673D" class="hotmart-button">BUY NOW</a>
+			<a href="https://pay.hotmart.com/E100161673D" class="btn btn-success btn-md d-block mx-auto hotmart-button">BUY NOW</a>
 		</div>
 		
 	  </div>
-	  <div class="product-image-wrapper">
+	  <div class="col-md-6 text-center">
 		<img src="images/cover-sewing-english.png" alt="COLORING BOOK: SEWING" class="product-image">
 	  </div>
 	</div>
 </div>
 
 <div class="container">
-	<div class="product-section" id="erizoart">
+	<div class="row align-items-center my-4" id="erizoart">
 
 	</div>
 </div>
@@ -74,7 +60,7 @@
         <div class="price-label"></div>
         <div class="price">$ 3.90</div>
         <div class='payment-button'>
-            <a href="https://pay.hotmart.com/E100161673D" class="hotmart-button">BUY NOW</a>
+            <a href="https://pay.hotmart.com/E100161673D" class="btn btn-success btn-md d-block mx-auto hotmart-button">BUY NOW</a>
         </div>
         <div class="footer-text">100% SECURE PAYMENT WITH IMMEDIATE ACCESS</div>
     </div>
@@ -88,7 +74,7 @@
 		<div id="questions-anwers-area"></div>
   </div>
 
-  <footer id="footer">
+  <footer id="footer" class="py-4">
 
   </footer>
 
